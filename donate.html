@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Donation Form</title>
+    <link rel="stylesheet" href="donate.css">
+    
+</head>
+<body>
+    <div class="sec1">
+    <div class="video">
+        <p id="p">Our team is giving free food to needy.</p>
+        <video width="620" height="440" controls>
+            <source src="istockphoto-167534557-640_adpp_is.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          
+          </video>
+    </div>
+    <div class="container">
+        <h1>Donate to Our Platform</h1>
+        <form id="donationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="tel">Phone:</label>
+            <input type="tel" id="tel" name="tel" required>
+
+            <label for="address">Address:</label>
+            <input type="address " id="address" name="address" required>
+
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+
+            <label for="amount">You are donating for:</label>
+            <select name="amount" id="amount" required>
+                <option>Human</option>
+                <option>Animal</option>
+                <option>Both</option>
+            </select>
+            <br><br>
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="button" onclick="submitDonation()">Donate Now</button>
+        </form>
+        <div id="successMessage" class="hidden">
+            <p>Thank you for your donation!</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; Zero Hunger All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+      function submitDonation() {
+    // Simulate form submission (you can replace this with actual API call)
+    const form = document.getElementById('donationForm');
+    const successMessage = document.getElementById('successMessage');
+
+    // Check if the form is valid
+    if (form.checkValidity()) {
+        // Display success message and hide the form
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
+    } else {
+        // If the form is not valid, trigger browser's validation messages
+        form.reportValidity();
+    }
+}
+
+    </script>
+</body>
+</html>

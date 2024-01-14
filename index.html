@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Zero Hunger</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+
+  <header>
+		<nav>
+			<div class="logo">Zero Hunger</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="policy.html">Policy</a></li>
+				<li><a href="service.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a><button onclick="document.getElementById('id03').style.display='block'">How We Work</button></a>
+				
+        <li><a><button onclick="document.getElementById('id01').style.display='block'">Sign Up</button></a>
+        </li>
+			</ul>
+		</nav>
+	</header>
+
+  <!-- signup -->
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+       <div class="sign-container">
+        <div class="signUp"><h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p></div>
+        <div class="signIn">
+        <h1><button onclick="document.getElementById('id02').style.display='block'">Sign In</h1>
+          <p>Already have an account</p>
+       </div>
+        </div>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+    <footer>
+      <p>&copy; Zero Hunger All rights reserved.</p>
+  </footer>
+  
+  </div>
+
+  <!-- sign in -->
+  <div id="id02" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+       <div class="sign-container">
+        
+        <div class="signIn">
+        <h1><button onclick="document.getElementById('id02').style.display='block'">Sign In</h1>
+          <p>Already have an account</p>
+       </div>
+        </div>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p> <a href="#" style="color:dodgerblue">Forget Your Password</a>.</p>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign In</button>
+        </div>
+      </div>
+    </form>
+    <footer>
+      <p>&copy; Zero Hunger All rights reserved.</p>
+  </footer>
+  
+  </div>
+  
+
+  <!-- content1 -->
+  <div class="img1">
+    <!-- rotate line -->
+  <div class="rotating-sentence">End hunger, achieve food security and improved nutrition and promote sustainable Agriculture    End hunger, achieve food security and improved nutrition and promote sustainable Agriculture</div>
+  
+    <div class="sec1">
+      <div class="desk1">
+          <div class="para1">
+              <p>End Hunger</p>
+              <p>Achieve Food Secuirty</p>
+              <p>Promote Sustainable Agriculture</p>
+              <p id="animal">Save Homeless Animals</p>
+          </div>
+          <div class="para2">
+              <p>More than 690 million
+                people were undernour-
+                ished in 2019, mainly in
+                Asia and Africa. People
+                experiencing moder-
+                ate food insecurity are
+                typically unable to eat a
+                healthy, balanced diet on
+                a regular basis because of
+                income or other resource
+                constraints. If these trends
+                continue, an estimated
+                840 million people will
+                go hungry by 2030.</p>
+          </div>
+          <div class="contact">
+            <a href="form.html">Join Us</a>
+          </div>
+    </div>
+    <div class="desk2">
+      <div class="slide">
+        <div class="slideImg">
+        <img src="30ac0d6f1126244e2a3889c875c2b0711663835191 copy.avif" style="height:400px" alt=""> 
+        </div>
+        <div class="slideImg">
+           <img src="young-mother-teaching-her-child-how-eat_1302-45222.avif" style="height: 400px" alt=""> 
+        </div>
+        <div class="slideImg">
+            <img src="1618849030qqist-5fef8323b5fe6.jpeg" style="height:400px" alt=""> 
+        </div>
+        <div style="text-align:centre">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div> 
+      </div>
+
+    </div> 
+
+  </div>
+
+
+  <!-- content 2 -->
+  <div id="id03" class="modal">
+    <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="content">
+    <h1>How We Work</h1>
+
+    <section class="portfolio-section">
+      <div class="quote"><i>
+        Sustainable Development Goal 2 is to “create a world free of hunger by 2030”, according to the United Nations.</i>
+      </div>
+      
+      <div class="project-card">
+        
+        <div class="photo">
+          <img src="global-hunger-index_1603025440.avif" alt="jpg">
+        </div>
+        <div class="description">
+          <p>
+            We are working for zero Hunger for human and animal both which is Sustainable Development Goal 2 of United Nation which has to been achieved by @2030.<br>
+            <br>The UN has defined 8 targets and 13 indicators for SDG 2 Zero Hunger.<br>
+            <br>Through our online platform Ngo ,needy Person will be able to connect each other easily.<br>
+            <br>We try to minimise food wastage and to enhance food secuirty.<br>
+            <br>We will try to enhance productivity of small scale farmers Through Technology ,
+            distributing  Fund,various goverment policies and current government programs through our app.<br>
+            We save homeless animals and provide free food and shelter, it will also decrease road accident and farmers will be happy because these animals destroy crops.
+
+          </p>
+        </div>
+      </div> 
+
+      <div class="project-card">
+        
+        
+        <div class="description">
+          <p>Through Our Platform we will create 3 section
+             In First section We will place NGO type Organisation.
+          <br>In second section we will place a person who wants to help people by food ,donation,work,etc.
+          <br>Any normal person , hostel ,Restaurant will be able to give information that they have access food which has to be utilized in minimum days.they upload data related to food on our website.
+          <br> A local NGO through own portal can collecte this food and distribute it to needy person.
+          <br>In this process we will give priority to Ngo according to his rating and Distance.
+          <br>Through this, A lot of food can be saved from wastage in Marriage, Restaurant,etc.
+          </p>
+        </div>
+        
+        <div class="photo">
+          <img src="global-hunger-index_1603025440.avif" alt="jpg">
+        </div>
+      </div>
+
+      <div class="project-card">
+        
+        <div class="photo">
+          <img src="global-hunger-index_1603025440.avif" alt="jpg">
+        </div>
+        <div class="description">
+          <p>
+            In third section we will place farmers , unemloyed person,Labours,etc.
+            <br>Through our platform we will Organise Guidance session on technical skill,
+            government policy , new Technology on Agriculture. <br>
+            <br>we will try to make person employable and try to motivate people to work.
+            <br>            
+            
+            
+            Our organization collaborates closely with government efforts to ensure food security and achieve the Zero Hunger target.<br><br> We provide information on food distribution programs, nutrition education, and community-based projects that contribute to eradicating hunger</p>
+        </div>
+      </div>
+
+      
+    </section>
+  </div>
+  <footer>
+    <p>&copy; Zero Hunger All rights reserved.</p>
+</footer>
+  </div>
+
+  <!-- service -->
+  <div class="services-container">
+    <div class="service">
+        <div class="service-icon">🍲</div>
+        <div class="service-title">Free Food Distribution</div>
+        <div class="service-description">Providing nutritious meals to the poor and hungry, ensuring that no one goes to bed hungry.</div>
+    </div>
+    <div class="service">
+        <div class="service-icon">🌱</div>
+        <div class="service-title">Sustainable Agriculture</div>
+        <div class="service-description">Supporting sustainable farming practices to promote food security and self-sufficiency.</div>
+    </div>
+    <div class="service">
+        <div class="service-icon">🤝</div>
+        <div class="service-title">Community Collaboration</div>
+        <div class="service-description">Collaborating with local communities to address hunger-related issues and foster sustainable development.</div>
+    </div>
+    <div class="service">
+        <div class="service-icon">🌍</div>
+        <div class="service-title">Zero Hunger Advocacy</div>
+        <div class="service-description">Advocating for policies and initiatives that contribute to the global goal of achieving zero hunger.</div>
+    </div>
+</div>
+
+<div class="donate-section" id="donate">
+    <h2>Your support can make a difference!</h2>
+    <p>Help us continue our mission by making a donation today.</p><br><br>
+    <a href="donate.html" class="donate-button">Donate Now</a>
+</div>
+
+<!-- popup -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <h2>Important Announcement</h2>
+    <p id="p">We are working for ZERO HUNGER Sustainable development goal of United Nation.</p>
+    <p id="p">For this we are organising a seminar in GNIOT COLLEGE GREATER NOIDA </p>
+    <P id="p">Join Seminar and help people</P>
+    <div class="donate-section" id="donate">
+      <h2>Your support can make a difference!</h2>
+      <p>Help us continue our mission by making a donation today.</p><br><br>
+      <a href="donate.html" class="donate-button">Donate Now</a>
+  </div>
+    
+
+  </div>
+</div>
+<div class="quote"><i>
+ Disclaimer: We are not promotting beggary , We are helping only. Our target is to achieve Zero Hunger in The world.</i>
+</div>
+
+<footer>
+    <p>&copy; Zero Hunger All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
